@@ -1,0 +1,16 @@
+var s1 = Number.parseInt(prompt("Digite o seu saldo do mes 01: "))
+var s2 = Number.parseInt(prompt("Digite o seu saldo do mes 02 :"))
+var s3 = Number.parseInt(prompt("Digite o seu saldo do mes 03: "))
+var s4 = Number.parseInt(prompt("Digite o seu saldo do mes 04 :"))
+var s5 = Number.parseInt(prompt("Digite o seu saldo do mes 05 :"))
+var s6 = Number.parseInt(prompt("Digite o seu saldo do mes 06 :"))
+var s7 = Number.parseInt(prompt("Digite o seu saldo do mes 07 :"))
+var s8 = Number.parseInt(prompt("Digite o seu saldo do mes 08 :"))
+var s9 = Number.parseInt(prompt("Digite o seu saldo do mes 09 :"))
+var s10 = Number.parseInt(prompt("Digite o seu saldo do mes 10 :"))
+var s11 = Number.parseInt(prompt("Digite o seu saldo do mes 11 :"))
+var s12 = Number.parseInt(prompt("Digite o seu saldo do mes 12 :"))
+
+var media = (s1+s2+s3+s4+s5+s6+s7+s8+s9+s10+s11+s12)/12
+var empr = media*(60/100)
+alert(`Sua média é ${media} o valor do empréstimo de 60% sera: ${empr}`)
