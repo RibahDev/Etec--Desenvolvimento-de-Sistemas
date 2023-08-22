@@ -8,13 +8,13 @@ if (idade >=18 && idade < 45) {
     }
     
 } else if ( idade >= 45 && idade <= 65){
-    alert("Você esta aproveitando a vida ? Adulto(a)/Coroa.")
+    alert("Você esta aproveitando a vida ? Adulto(a)/Coroa.");
 
 }else if (idade > 65 && idade <= 100) {
-    alert("Você já aproveitou a vida, descanse :)")
+    alert("Você já aproveitou a vida, descanse :)");
 } else if(idade > 100){
-    alert("R.I.P ")
+    alert("R.I.P ");
 }
 else {
-    alert("Aproveite a vida! Jovem.")
+    alert("Aproveite a vida! Jovem.");
 }
