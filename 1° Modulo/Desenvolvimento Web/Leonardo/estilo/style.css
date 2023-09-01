@@ -10,7 +10,7 @@
 html, body {
     width: 100%;
     height: 100%; /* Será alterado para auto*/
-    background-color: crimson; /*Sera alterado para preto*/
+    background-color: rgb(29, 29, 29); /*Sera alterado para preto*/
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: #fff;
 }
@@ -43,6 +43,16 @@ nav {
     justify-content: space-evenly;
 }
 
+nav > .menu {
+    padding-right: 80px;
+}
+
+.menu-botao {
+    background-color: blueviolet;
+    padding: 14px 30px;
+    border-radius: 15px;
+}
+
 #logo {
     cursor: pointer;
     display: flex;
@@ -56,14 +66,28 @@ nav {
     padding-left: 5px;
 }
 
-#logo-ai {
+#logo-ai,
+#creativ,
+#leo {
     font-weight: 400;
-    background-image:-webkit-linear-gradient(0deg, #ff004c, #0040ff);
+    background-image:-webkit-linear-gradient(0deg, #ff00aa, #00ccff);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+<<<<<<< HEAD
 .menu {
     display: flex;
 }
+=======
+.container-banner {
+    width: 0 auto;
+    height: 100%;
+
+}
+
+.container-banner > p {
+    color: gray;
+}
+
