@@ -11,7 +11,7 @@ categorias:
 
 let idade = Number(prompt('Informe sua idade'));
 
-if (idade <= 7) {
+if (idade >= 5 && idade <= 7) {
     alert('Você está na categoria INFANTIL A');
 } else if (idade <= 10) {
     alert('Você está na categoria INFANTIL B');

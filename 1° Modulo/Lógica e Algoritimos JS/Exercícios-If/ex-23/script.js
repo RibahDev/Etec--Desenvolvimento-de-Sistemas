@@ -7,12 +7,10 @@ let anoNascimento = Number(prompt('Informe seu ano de nascimento'));
 
 let idade = 2023 - anoNascimento
 
-if (idade >= 16 && idade < 18) {
+if (idade >= 16 && idade < 18 || idade > 70) {
     alert(`Você tem ${idade} anos e seu voto é facultativo`);
 } else if (idade > 18 && idade < 70) {
     alert(`Você tem ${idade} anos e seu voto é obrigatório`);
-} else if (idade >= 70){
-    alert(`Você tem ${idade} anos e seu voto é facultativo`);
 } else {
     alert(`Você tem ${idade} anos e você não pode votar`);
 }
