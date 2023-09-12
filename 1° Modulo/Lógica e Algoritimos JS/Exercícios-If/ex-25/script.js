@@ -4,5 +4,9 @@ let salario = Number(prompt("Digite seu Salario:"));
 let gastos = Number(prompt("Digite seus Gastos:"));
 
 if(salario > gastos) {
-    
+    alert("Gastos dentro do Orçamento!");
+}else if(salario === gastos) {
+    alert("Na risca, melhor economizar!");
+} else {
+    alert("Orçamento estourado");
 }
