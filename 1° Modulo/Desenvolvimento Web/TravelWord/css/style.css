@@ -40,6 +40,11 @@ main {
     height: 100%;
 }
 
+header {
+    padding-top: 10px;
+    display: flex;
+}
+
 nav {
     display: flex;
     width: 100%;
@@ -54,11 +59,13 @@ nav {
     font-family: 'Bebas Neue';
     font-size: 18pt;
     color: rgb(23,53,64);
-    cursor: pointer;   
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .menu:hover {
     color: rgb(245,148,0);
+    transition: 0.5s;
 }
 
 .responsiva {
@@ -76,5 +83,54 @@ nav {
     border:2px solid rgb(23,53,64);
     border-radius: 10px;
     padding: 2px 10px 0 10px;
+    transition: 0.5s;
+}
 
+.botao:hover {
+    background-color: rgb(23,53,64);
+}
+
+#conteudo {
+    display: flex;
+}
+
+#coluna-1 {
+    width: 55%;
+    padding-top: 30px;
+}
+
+#coluna-2 {
+    width: 45%;
+}
+
+.titulo {
+    padding: 15px 0;
+    font-family: 'Bebas Neue';
+    font-size: 18pt;
+    color: rgb(245,148,0);
+}
+
+.destaque {
+    padding-bottom: 15px;
+    color: rgb(23,53,64);
+    font-family: 'Bebas Neue';
+    font-size: 60pt;
+    width: 50%;
+    line-height: 100%;
+}
+
+.texto{
+    font-family: 'Poppins';
+    line-height: 170%;
+    padding-bottom: 30px;
+}
+
+.btnSaiba {
+    font-family: 'Bebas Neue';
+    background-color: rgb(245,148,0);
+    font-size: 18pt;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 3px 15px;
 }
