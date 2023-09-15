@@ -22,17 +22,30 @@ let valorHora = Number(prompt("Digite o valor equivalente a sua hora de trabalho
 let qtdHoras = Number(prompt("Agora digite quantidade de horas trabalhadas no mês:"));
 let salarioBruto = valorHora * qtdHoras;
 let descontoInss = salarioBruto * 0.10;
-let descontoIr = salarioBruto * 0.5;
+let descontoIr
 let descontoSindicato = salarioBruto * 0.03;
 let fgts = salarioBruto * 0.11;
 
 
- if(salarioBruto < 900) {
-    let totalDescontos = fgts + descontoInss + descontoIr + descontoSindicato;
-    let salarioLiquido = salarioBruto - descontoInss - descontoIr;
-    alert(`Salário Bruto:R$${salarioBruto}\n Desconto Sindicato: 0 \n Desconto IR:R$${descontoIr} \n Desconto INSS:R$${descontoInss} \n Desconto FGTS:R$${fgts} \n Total de descontos:R$${totalDescontos.toFixed(2)} \n Salário Líquido:R$${salarioLiquido}`);
- } else if (salarioBruto >= 1500 && salarioBruto < 2500) {
+ if(salarioBruto <= 900) {
+    let totalDescontos = fgts + descontoInss + descontoSindicato;
+    let salarioLiquido = salarioBruto - descontoInss;
+    alert(`Salário Bruto:R$${salarioBruto}\n Desconto Sindicato:${descontoSindicato} \n Desconto IR:R$0,00 \n Desconto INSS:R$${descontoInss} \n Desconto FGTS:R$${fgts} \n Total de descontos:R$${totalDescontos.toFixed(3)} \n Salário Líquido:R$${salarioLiquido}`);
+ } else if (salarioBruto > 900 && salarioBruto <= 1500) {
+    descontoIr = salarioBruto * 0.05;
     let totalDescontos = fgts + descontoInss + descontoIr + descontoSindicato;
     let salarioLiquido = salarioBruto - descontoInss - descontoIr;
     alert(`Salário Bruto:R$${salarioBruto}\n Desconto Sindicato:R$${descontoSindicato} \n Desconto IR:R$${descontoIr} \n Desconto INSS:R$${descontoInss} \n Desconto FGTS:R$${fgts} \n Total de descontos:R$${totalDescontos.toFixed(2)} \n Salário Líquido:R$${salarioLiquido}`);
- } else if()
+ } else if(salarioBruto > 1500 && salarioBruto <= 2500) {
+   descontoIr = salarioBruto * 0.10;
+   let totalDescontos = fgts + descontoInss + descontoIr + descontoSindicato;
+    let salarioLiquido = salarioBruto - descontoInss - descontoIr;
+    alert(`Salário Bruto:R$${salarioBruto}\n Desconto Sindicato:R$${descontoSindicato} \n Desconto IR:R$${descontoIr} \n Desconto INSS:R$${descontoInss} \n Desconto FGTS:R$${fgts} \n Total de descontos:R$${totalDescontos.toFixed(2)} \n Salário Líquido:R$${salarioLiquido}`);
+ } else if(salarioBruto > 2500) {
+   descontoIr = salarioBruto * 0.20;
+   let totalDescontos = fgts + descontoInss + descontoIr + descontoSindicato;
+    let salarioLiquido = salarioBruto - descontoInss - descontoIr;
+    alert(`Salário Bruto:R$${salarioBruto}\n Desconto Sindicato:R$${descontoSindicato} \n Desconto IR:R$${descontoIr} \n Desconto INSS:R$${descontoInss} \n Desconto FGTS:R$${fgts} \n Total de descontos:R$${totalDescontos.toFixed(2)} \n Salário Líquido:R$${salarioLiquido}`);
+ }else {
+   alert("Valores invalidos, por favor verifique os valores e repita o processo.");
+ }
