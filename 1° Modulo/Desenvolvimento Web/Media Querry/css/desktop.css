@@ -1,0 +1,30 @@
+
+header {
+    max-width: 1200px;
+}
+
+#logo {
+    width: 30%;
+}
+
+#iconeMenu {
+    display: none;
+}
+
+
+nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn-menu {
+    background-color: transparent;
+    color: rgb(19,19,36);
+    text-transform: uppercase;
+    font-size: 13pt;
+    font-weight: 700;
+    cursor: pointer;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.11);
+}

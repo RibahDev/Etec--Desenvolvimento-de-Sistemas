@@ -1,0 +1,19 @@
+
+#logo {
+    width: 50%;
+}
+
+#iconeMenu {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 15px;
+    font-size: 18pt;
+    color: rgb(19,19,36);
+
+}
+
+nav {
+    display: none;
+}
