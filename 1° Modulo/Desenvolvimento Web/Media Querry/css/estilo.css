@@ -76,3 +76,16 @@ p {
     line-height: 150%;
     text-align: justify;
 }
+
+.btn-orange {
+    padding: 5px 10px;
+    border:2px solid #e68600;
+    background-color: #ff9400;
+    font-size: 12pt;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.288);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.288);
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
