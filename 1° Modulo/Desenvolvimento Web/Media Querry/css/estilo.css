@@ -34,7 +34,12 @@ main {
     margin: 0 auto;
     height: auto;
     padding: 20px;
-    
+}
+
+main > h1,
+main > p {
+    color: #fff;
+
 }
 
 .containerHeader {
@@ -46,10 +51,8 @@ main {
     background-color: #fff;
 }
 
-
-
 .azul {
-    background-color: rgb(193,236,255);
+    background-color: rgb(19, 19, 36);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.226);
 }
 
@@ -60,6 +63,8 @@ hr {
     border-radius: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.116);
 }
+
+
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
