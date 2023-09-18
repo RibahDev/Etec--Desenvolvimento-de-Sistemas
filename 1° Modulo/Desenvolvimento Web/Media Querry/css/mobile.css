@@ -17,3 +17,68 @@
 nav {
     display: none;
 }
+
+.containerLocais {
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+#local {
+    margin-bottom: 15px;
+    width: 400px;
+    height: 750px;
+}
+
+.img {
+    height: 360px;
+}
+
+.valueBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    font-size: 14pt;
+}
+
+.date {
+    font-size: bold;
+}
+
+.date > label {
+    padding: 10px;
+}
+.date > input {
+    border: 1px solid #33333371;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.containerBuscar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    height: auto;
+    color: #fff;
+    background-color: rgb(19,19,36);
+    padding: 20px;
+}
+
+.containerBuscar > h3 { 
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.itemBuscar > input {
+    padding: 3px;
+    width: 250px;
+}
+
+.itemBuscar > button {
+    padding: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}

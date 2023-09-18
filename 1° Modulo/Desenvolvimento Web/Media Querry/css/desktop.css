@@ -52,82 +52,42 @@ nav {
     color: #1b627c;
 }
 
-.containerLocais {
-    position: relative;
-    margin: 0 auto;
-    padding: 20px;
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-#local {
+.containerBuscar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 240px;
-    height: 500px;
-    background-color: #fff;
-    border: 1px solid #33333363;
-    border-radius: 10px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.137);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.img {
-    height: 250px;
-    border-radius: 10px 10px 0 0;
-}
-
-h2 {
-    
-}
-
-h3 { 
-    padding: 10px 0;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#local > hr {
-    width: 90%;
-}
-
-#local > p {
-    padding: 15px;
-    
-}
-
-.valueBtn {
-    padding: 10px 20px;
-    background-color: rgb(19,19,36);
+    height: auto;
     color: #fff;
+    background-color: rgb(19,19,36);
+    padding: 20px;
+}
+
+.containerBuscar > h3 { 
+    font-size: 22pt;
+    padding: 20px 0;
+}
+
+.itemBuscar > input {
+    width: 550px;
+    padding: 10px;
     border-radius: 5px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+.itemBuscar > button {
+    padding: 10px;
+    font-weight: bold;
     cursor: pointer;
+    border-radius: 5px;
+    background-color: #ff9400;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.336);
     transition: 0.3s;
 }
 
-.valueBtn:hover {
-    background-color: #ff9400;
-    transition: 0.4s;
-    position: relative;
-    transform: translate(-1px, -2px);
+.itemBuscar > button:hover {
+    background-color: #d4d4d4;
+    color: black;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.144);
+    transition: 0.5s;
 }
 
-#pontos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 50px ;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#pontos >  hr {
-    padding-top: 5px;
-    width: 20%;
-}
