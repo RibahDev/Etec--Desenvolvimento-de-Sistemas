@@ -38,6 +38,7 @@ nav {
 .btn-orange {
     transition: 0.5s;
 }
+
 .btn-orange:hover {
     position: relative;
     transform: translate(-2px, -2px);
@@ -52,6 +53,26 @@ nav {
     color: #1b627c;
 }
 
+.valueBtn:hover {
+    background-color: #ff9400;
+    transition: 0.4s;
+    position: relative;
+    border:1px solid #d47c00;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.212);
+    transform: translate(-1px, -2px);
+}
+
+.valueBtn > a:hover {
+    color: #fff;
+}
+
+#oferta > a:hover {
+    background-color: #ff9400;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.13);
+    border:1px solid #e68600;
+}
+
 .containerBuscar {
     display: flex;
     flex-direction: column;
@@ -64,7 +85,16 @@ nav {
 
 .containerBuscar > h3 { 
     font-size: 22pt;
-    padding: 20px 0;
+    padding-top: 20px;
+}
+
+.containerBuscar >  hr {
+    padding-top: 5px;
+    width: 20%;
+}
+
+.itemBuscar {
+    padding: 50px 0;
 }
 
 .itemBuscar > input {
@@ -90,4 +120,6 @@ nav {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.144);
     transition: 0.5s;
 }
+
+
 

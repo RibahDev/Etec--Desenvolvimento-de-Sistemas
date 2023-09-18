@@ -26,20 +26,31 @@ nav {
 
 #local {
     margin-bottom: 15px;
-    width: 400px;
+    width: auto;
     height: 750px;
 }
 
 .img {
-    height: 360px;
+    height: 400px;
 }
 
 .valueBtn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 40px;
+    padding: 25px 40px;
     font-size: 14pt;
+}
+
+.valueBtn:active{
+    background-color: #ff9400;
+    color: #fff;
+    transition: 0.4s;
+    position: relative;
+    border:1px solid #d47c00;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.212);
+    transform: translate(-1px, -2px);
+}
+
+.valueBtn > a:active {
+    color: #fff;
 }
 
 .date {
@@ -49,12 +60,19 @@ nav {
 .date > label {
     padding: 10px;
 }
+
 .date > input {
     border: 1px solid #33333371;
     padding: 5px;
     border-radius: 5px;
 }
 
+#oferta > a:active {
+    background-color: #ff9400;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.13);
+    border:1px solid #e68600;
+}
 
 .containerBuscar {
     display: flex;
@@ -69,16 +87,53 @@ nav {
 
 .containerBuscar > h3 { 
     font-weight: bold;
+    padding: 20px 0 0 0;
     font-size: 20pt;
 }
 
+.containerBuscar >  hr {
+    padding-top: 5px;
+    width: 60%;
+}
+
+.itemBuscar {
+    padding: 50px 0;
+}
+
 .itemBuscar > input {
-    padding: 3px;
-    width: 250px;
+    padding: 5px;
+    width: 350px;
 }
 
 .itemBuscar > button {
-    padding: 3px;
-    border-radius: 3px;
+    padding: 5px;
+    font-weight: bold;
     cursor: pointer;
+    border-radius: 5px;
+    background-color: #ff9400;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.336);
+    transition: 0.3s;
 }
+
+.itemBuscar > button:active {
+    background-color: #d4d4d4;
+    color: black;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.144);
+    transition: 0.5s;
+}
+
+.containerDuvidas {
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.itensDuvidas {
+    margin-bottom: 20px;
+    max-width: 300px;
+    height: 450px;
+}
+
+
+
