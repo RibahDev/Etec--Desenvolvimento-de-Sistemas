@@ -8,10 +8,10 @@ let altura = Number(prompt("Agora digite sua altura"));
 
 if(sexo === 1) {
     let imc = (62.1 * altura) - 58;
-    alert(`Seu sexo é feminino, seu peso ideal é: ${imc}`);
+    alert(`Seu sexo é feminino, seu peso ideal é: ${imc.toFixed(2)}Kg`);
 }else if(sexo === 2) {
     let imc = (72.7 * altura) - 44.7;
-    alert(`Seu sexo é Masculino, seu peso ideal é: ${imc}`);
+    alert(`Seu sexo é Masculino, seu peso ideal é: ${imc.toFixed(2)}Kg`);
 } else {
-    alert("Valor incorreto, digite novamente!")
+    alert("Valor incorreto, digite novamente!");
 }

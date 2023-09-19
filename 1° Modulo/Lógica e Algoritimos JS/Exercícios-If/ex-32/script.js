@@ -43,7 +43,7 @@ let fgts = salarioBruto * 0.11;
 
     let salarioLiquido = salarioBruto - descontoInss - descontoIr;
     
-    alert(`Salário Bruto:R$${salarioBruto}\n Desconto Sindicato:R$${descontoSindicato} \n Desconto IR:R$${descontoIr} \n Desconto INSS:R$${descontoInss} \n Desconto FGTS:R$${fgts} \n Total de descontos:R$${totalDescontos.toFixed(2)} \n Salário Líquido:R$${salarioLiquido}`);
+    alert(`Salário Bruto:R$${salarioBruto.toFixed(3)}\n Desconto Sindicato:R$${descontoSindicato.toFixed(3)} \n Desconto IR:R$${descontoIr.toFixed(3)} \n Desconto INSS:R$${descontoInss}.toFixed(3) \n Desconto FGTS:R$${fgts.toFixed(3)} \n Total de descontos:R$${totalDescontos.toFixed(3)} \n Salário Líquido:R$${salarioLiquido.toFixed(3)}`);
 
  } else if(salarioBruto > 1500 && salarioBruto <= 2500) {
    descontoIr = salarioBruto * 0.10;
@@ -52,7 +52,7 @@ let fgts = salarioBruto * 0.11;
 
     let salarioLiquido = salarioBruto - descontoInss - descontoIr;
 
-    alert(`Salário Bruto:R$${salarioBruto}\n Desconto Sindicato:R$${descontoSindicato} \n Desconto IR:R$${descontoIr} \n Desconto INSS:R$${descontoInss} \n Desconto FGTS:R$${fgts} \n Total de descontos:R$${totalDescontos.toFixed(2)} \n Salário Líquido:R$${salarioLiquido}`);
+    alert(`Salário Bruto:R$${salarioBruto.toFixed(3)}\n Desconto Sindicato:R$${descontoSindicato.toFixed(3)} \n Desconto IR:R$${descontoIr.toFixed(3)} \n Desconto INSS:R$${descontoInss.toFixed(3)} \n Desconto FGTS:R$${fgts.toFixed(3)} \n Total de descontos:R$${totalDescontos.toFixed(3)} \n Salário Líquido:R$${salarioLiquido.toFixed(3)}`);
 
  } else if(salarioBruto > 2500) {
    descontoIr = salarioBruto * 0.20;
@@ -61,7 +61,7 @@ let fgts = salarioBruto * 0.11;
    
     let salarioLiquido = salarioBruto - descontoInss - descontoIr;
 
-    alert(`Salário Bruto:R$${salarioBruto}\n Desconto Sindicato:R$${descontoSindicato} \n Desconto IR:R$${descontoIr} \n Desconto INSS:R$${descontoInss} \n Desconto FGTS:R$${fgts} \n Total de descontos:R$${totalDescontos.toFixed(2)} \n Salário Líquido:R$${salarioLiquido}`);
+    alert(`Salário Bruto:R$${salarioBruto.toFixed(3)}\n Desconto Sindicato:R$${descontoSindicato.toFixed(3)} \n Desconto IR:R$${descontoIr.toFixed(3)} \n Desconto INSS:R$${descontoInss.toFixed(3)} \n Desconto FGTS:R$${fgts.toFixed(3)} \n Total de descontos:R$${totalDescontos.toFixed(3)} \n Salário Líquido:R$${salarioLiquido.toFixed(3)}`);
     
  }else {
 

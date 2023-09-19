@@ -11,7 +11,7 @@ let tipoCombustivel = prompt("Selecione o tipo de combustível: A - ácool e G -
 let qtdCombustivel = Number(prompt("Digite a quantidade que deseja comprar em Litros:"));
 let valorLitro
 
-if(tipoCombustivel === "A") {
+if(tipoCombustivel.toUpperCase() === "A") {
     if(qtdCombustivel <= 20){
         valorLitro = 5;
         let valor = qtdCombustivel * valorLitro * 0.97;

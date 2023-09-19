@@ -18,7 +18,7 @@ if(salarioAtual <= 2800) {
 
     aumento = salarioAtual * 0.2;
     aumentoSalario = aumento + salarioAtual;
-    alert(`Salario atual: ${salarioAtual} + Aumento de 20% (R$${aumento}). Seu salário atualizado: ${aumentoSalario}`);   
+    alert(`Salario atual: ${salarioAtual} + Aumento de 20% (R$${aumento}). Seu salário atualizado: R$${aumentoSalario}`);   
 
 } else if(salarioAtual > 2800 && salarioAtual <= 7000) {
 
@@ -30,13 +30,13 @@ if(salarioAtual <= 2800) {
 
     aumento = salarioAtual * 0.10;
     aumentoSalario= aumento + salarioAtual;
-    alert(`Salario atual: ${salarioAtual} + Aumento de 10% (R$${aumento}). Seu salário atualizado: ${aumentoSalario}`);
+    alert(`Salario atual: ${salarioAtual} + Aumento de 10% (R$${aumento}). Seu salário atualizado: R$${aumentoSalario}`);
 
 } else if(salarioAtual >= 15000) {
 
     aumento = salarioAtual * 0.05;
     aumentoSalario = aumento + salarioAtual;
-    alert(`Salario atual: ${salarioAtual} + Aumento de 5% (R$${aumento}). Seu salário atualizado: ${aumentoSalario}`);
+    alert(`Salario atual: ${salarioAtual} + Aumento de 5% (R$${aumento}). Seu salário atualizado: R$${aumentoSalario}`);
     
 } else {
     alert("Erro! Corrija os valores.")
