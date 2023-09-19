@@ -230,3 +230,14 @@ h3 {
     height: 400px;
     background-color: rgb(19, 19, 36);
 }
+
+.itensFooter, 
+#container-redes a,
+#container-sobre p {
+    color: #fff;
+}
+
+.itensFooter {
+    display: flex;
+    justify-content: center;
+}
