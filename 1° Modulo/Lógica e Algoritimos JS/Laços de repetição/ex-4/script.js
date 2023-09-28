@@ -3,11 +3,16 @@ let primeiroValor = Number(prompt("Digite um valor inicial"));
 let segundoValor = Number(prompt("Digite um valor maximo"));
 var numImpar = 0;
 var numPar = 0;
-for(let i = primeiroValor; i <= segundoValor; i++){
     if(primeiroValor > segundoValor) {
-        console.log("Digite o valor menor primeiro!")
-    }else if(i % 2 == 0) {
-        let totalP = numPar
-        console.log(totalP);
+        console.log("Digite o valor menor primeiro!");
+    }else{
+        for(let i = primeiroValor; i <= segundoValor; i++){
+            if(i % 2 == 0) {
+                numPar++;
+            }else {
+                numImpar++;
+            }
     }
-}
+};
+console.log(numPar);
+console.log(numImpar);
