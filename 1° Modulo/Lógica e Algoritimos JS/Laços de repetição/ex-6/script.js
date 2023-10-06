@@ -5,4 +5,4 @@ let soma = 0 ;
 for(i = 0; i <= final; i++) {
     soma +=i;
 }
-console.log(soma);
+alert(soma);

@@ -2,6 +2,6 @@
 let qtd = Number(prompt("Escolha quantos números impares serão exibidos:"));
 let numImpar = 1;
 for(let i = 0; i < qtd; i++){
-    console.log(numImpar);
+    alert(numImpar);
     numImpar += 2;
 }

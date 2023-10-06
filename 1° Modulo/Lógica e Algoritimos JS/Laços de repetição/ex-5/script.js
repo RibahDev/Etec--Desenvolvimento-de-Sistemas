@@ -7,4 +7,4 @@ for(i = initial; i <= finish; i++) {
         soma += i;
     }
 }
-console.log(soma);
+alert(soma);
