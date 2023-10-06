@@ -9,7 +9,11 @@ function fazerJogada(indice) {
     atualizarTabuleiro();
 
     if(verificarVencedor()) {
-        alert(`${jogadorAtual} venceu!`);
+        Swal.fire({
+            icon: 'success',
+            title: 'Aeeee',
+            text: 'Você ganhou!!!!!',
+        });
         jogoTerminou = true;
         return;
     }
@@ -68,7 +72,11 @@ function jogadaComputador() {
     atualizarTabuleiro();
 
     if(verificarVencedor()) {
-        alert(`${jogadorAtual} Venceu!`);
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Você perdeu!!!!!',
+        });
         jogoTerminou = true;
         return;
     }
