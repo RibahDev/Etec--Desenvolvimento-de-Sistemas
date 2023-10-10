@@ -5,22 +5,28 @@
 
 
 var numInteiro = Number(prompt("Digite um número inteiro:"));
+var primo = true;
 
-for (var i = 2; i < numInteiro; i++) {
+for (let i = 2; i < numInteiro; i++) {
     if(numInteiro % i === 0) {
-        alert(`${numInteiro} não é primo.`);
+        primo = false;
         break;
+            
+    } 
+if (primo) {
+    alert(`${numInteiro} é primo!`);
+}else {
+    alert(`${numInteiro} não é primo`)
+}
         
-    } else{
-        alert(`${numInteiro} é primo.`);
-        for (var imp = 1; imp < numInteiro; imp++) {
-            if(imp % imp !== 0) {
-                imp += i;
-                alert(imp);
-            }
-        }
-    }
 }
 
-
-
+for (let i = 2; i < numInteiro; i++) {
+    if(numInteiro % i === 0) {
+        primo = false;
+        null
+    } else {
+        alert(i++);
+    }
+    
+}
