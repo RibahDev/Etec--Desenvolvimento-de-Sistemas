@@ -1,0 +1,20 @@
+{
+    "quadrinhos": [
+        {
+            "titulo": "A Saga Do Batman Vol.31",
+            "descricao": "E mais um arco escrito por Alan Grant, com arte de Tim Sale, asurge um novo criminoso fantasiado em Gotham City, e ele já está perseguido por alguém! Ao dar de cara com o Batman, Bruce Wayne se vê envolvido em uma trama repleta de vilões, com destaque para o terrivel Mariposa Assasina, além das participações ativas do Homem-Gato e do Homem-Calendário! E mais: a origem secreta do Cara de Barro!",
+            "imagem": "img/1.webp"
+        },
+        {
+            "titulo": "Batman: O Cavaleiro Branco Do Futuro - Edição De Luxo",
+            "descricao": "Em dez anos, muita coisa mudou em Gotham. Batman, Bruce Wayne, foi preso... mas os criminosos de verdade ainda estão à solta. O CEO da Gotham Motors, Derek Powers, transformou a OTG e a cidade que eles juraram proteger, fazendo com que a criminalidade diminua. Entretando, a que custo? Surge um novo Batman na cidade de Powers, e apenas Brice está ciente dos perigos vindouros. Um novo capítulo do espetacular universo do Homem-Morcego criado por Sean Murphy!",
+            "imagem": "img/2.webp"
+        },
+        { 
+            "titulo": "Batman 23/81",
+            "descricao": "O epílogo da Guerra das Sombras, encerrando o eletrizante arco! Batman retornou a Gotham. Mas quando ele ouve falar de alguns acontecimentos estranhos em Malignésia, ele é forçado a questionar... O Abismo retornou? Também retornando da Guerra das Sombras, Robin medita sobre a morte chocante na família Al Ghul, retornando á Ilha Lázaro de mortícia, para mais uma revelação chocante!",
+            "imagem": "img/3.webp"
+        }
+
+    ]
+}

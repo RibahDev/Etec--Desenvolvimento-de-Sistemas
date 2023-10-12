@@ -1,0 +1,107 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.comic-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.comic-list li {
+    margin: 10px;
+    cursor: pointer;
+    max-width: 250px;
+}
+
+.comic-list li img {
+    max-width: 100%;
+}
+
+.modal { 
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    align-items: center;
+}
+
+.modal-content img {
+    max-width: 250px;
+}
+
+.modal-content button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #555;
+}
+
+h2, p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
