@@ -14,6 +14,27 @@
             "titulo": "Batman 23/81",
             "descricao": "O epílogo da Guerra das Sombras, encerrando o eletrizante arco! Batman retornou a Gotham. Mas quando ele ouve falar de alguns acontecimentos estranhos em Malignésia, ele é forçado a questionar... O Abismo retornou? Também retornando da Guerra das Sombras, Robin medita sobre a morte chocante na família Al Ghul, retornando á Ilha Lázaro de mortícia, para mais uma revelação chocante!",
             "imagem": "img/3.webp"
+        },
+        {
+            "titulo": "Batman: Reptiliano",
+            "descricao": "O que causa medo nos corações daqueles que aterrorizam Gotham? Costumava ser o Batman, mas algo muito mais assustador do que um homem vestido de morcego está atrás dos vilões de Gotham. Um monstro tão selvagem que assombra os sonhos dos monstros. Pinguim, Duas-Caras, Charada, Hera Venenosa, Pistoleiro. Todos se tornaram alvos de um ser sanguinário. Confira este sombrio conto de terror por Garth Ennis e Liam Sharp!",
+            "imagem": "img/4.webp" 
+        },
+        {
+            "titulo": "Batman: Vitória Sombria",
+            "descricao": "Um herói separado das pessoas que ele jurou proteger. Uma cidade assolada por aberrações se torna o campo de uma batalha contra gângsteres. Um brutal assassino de policiais cuja identidade é conhecida apenas como o Enforcador. Uma família criminosa reconstruindo seu império. Uma promotora pública com seus próprios planos. Um recém-nomeado comissário com um jovem e ambicioso esquadrão policial. Um amigo cuja traição o torna o inimigo mais perigoso de todos. E um jovem garoto, tornado órfão por uma tragédia, e destinado a grandes coisas. Cada fio desta trama se alinha em Batman: Vitória Sombria.",
+            "imagem": "img/5.webp" 
+        },
+        {
+            "titulo": "Batman: A Hora Da Morte 03",
+            "descricao": "É um verdadeiro inferno na terra quando uma guerra de gangues em Gotham irrompe devido ao misterioso artefato roubado pela Mulher-Gato e o Charada! E o Cavaleiro das Trevas está no meio do fogo cruzado! Qual é o objeto misterioso pelo qual tantos estão dispostos a matar, e como ele se conecta a Bruce Wayne? Sangue será derramado, vidas serão perdidas e um final surpreendente o deixará chocado quanto o relógio atingir A HORA DA MORTE!",
+            "imagem": "img/6.webp" 
+        }
+        ,
+        {
+            "titulo": "Batman Por Tom King Vol. 5",
+            "descricao": "O Coringa, naturalmente, soaria como um bom aliado para o Charada. No entanto, no início da carreira de herói do Homem-Morcego, os dois vilões travaram a Guerra das Piadas e Charadas, disputando o direito de matar o Batman. Gotham é assolada pelo terror do confronto entre os vilões, e o Cavaleiro das Trevas revela detalhes desse acontecimento do passado à Mulher-Gato.",
+            "imagem": "img/7.webp" 
         }
 
     ]

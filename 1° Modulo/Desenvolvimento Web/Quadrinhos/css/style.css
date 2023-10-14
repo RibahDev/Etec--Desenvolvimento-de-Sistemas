@@ -28,6 +28,9 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    text-align: center;
+}
 .main {
     max-width: 1200px;
     margin: 0 auto;
@@ -39,6 +42,9 @@ img {
     max-width: 100%;
     height: auto;
     vertical-align: middle;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #fff;
+
 }
 
 .comic-list {
