@@ -18,7 +18,15 @@ for (var i = 1; i <= numInteiro; i++) {
     }
 };
 // Letra (C)
-
+var ContPrimos = 0;
+for (var i =1; i <= Infinity; i++) {
+    if(verifPrimo(i) == true) {
+        alert(i);
+        ContPrimos++
+    }if (ContPrimos == numInteiro) {
+        break;
+    }
+}
 
 function verifPrimo(numInteiro){
     var contDiv = 0;
