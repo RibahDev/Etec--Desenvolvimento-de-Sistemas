@@ -1,0 +1,47 @@
+{
+    "quadrinhos": [
+        {
+            "titulo": "The Big Bang Theory",
+            "descricao": "  the big bang theory: Big Bang Theory conta a história de Sheldon e Leonard, dois físicos que moram no apartamento da frente da aspirante a atriz Penny. Fazem parte da turma de nerds também Howard e Raj. Juntos, os contrastes entre eles produzem muitas risadas. A Série de TV é produzida pela Warner Bros em conjunto com a Chuck Lorre Productions. A terceira temporada estreou em 21 de setembro de 2009 alcanándo o patamar de série número um da CBS.",
+            "imagem": "img/bigbangtheory.jpeg"
+        },
+        {
+            "titulo": "Game of Thrones",
+            "descricao": "game of thrones: Em um mundo onde guerra e fantasia se misturam, a série acompanha as movimentações de várias figuras poderosas que competem entre si para ocupar o Trono de Ferro e governar os Sete Reinos. Entre batalhas, intrigas, alianças, casamentos, assassinatos e crises de sucessão, seguimos as vidas e mortes destes personagens, assistindo ao que estão dispostos a fazer para sobreviver.",
+            "imagem": "img/got.webp"
+        },
+        { 
+            "titulo": "Mr. Robot",
+            "descricao": "mr robot: Mr. Robot é uma série de TV Americana transmitida originalmente pela USA Network. O drama, descrito como um suspense tecnológico, segue Elliot, um jovem programador que trabalha como engenheiro de segurança cibernética durante o dia e como hacker justiceiro durante a noite. Quando o misterioso líder de um grupo hacker underground o recruta para destruir a firma que ele é pago para proteger, Elliot deve tomar a maior decisão de sua vida.",
+            "imagem": "img/mrrobot.jpg"
+        },
+        {
+            "titulo": "Peaky Blinders",
+            "descricao": "peaky blinders: Peaky Blinders é uma série de TV britânica transmitida originalmente pela BBC Two. A história se passa na Grã-Bretanha em 1919 e acompanha a família Shelby, uma gangue cruel que prosperou após a Primeira Guerra Mundial, quando atividades do submundo, como o comércio ilegal de armas, esquema ilegal de aposta em corrida de cavalos, proteção e golpes de jogo se tornaram frequentes. A série é inspirada pelos eventos e pela história dos Peaky Blinders, uma gangue que surgiu na cidade de Birmingham, na Inglaterra.",
+            "imagem": "img/peaky.jpg" 
+        },
+        {
+            "titulo": "The Boys",
+            "descricao": "the boys: A série The Boys, lançada em 2019, é uma obra original do Amazon Prime Video, com um total de três temporadas e 24 episódios, até o momento. A trama, desenvolvida por Eric Kripke, segue um grupo de vigilantes cujo único trabalho é vigiar e manter os super-heróis corrompidos sob controle. A produção norte-americana é baseada nas histórias em quadrinhos de mesmo nome, criadas por Garth Ennis e Darick Robertson.",
+            "imagem": "img/theboys.jpg" 
+        },
+        {
+            "titulo": "The Office",
+            "descricao": "the office: Esta versão americana de The Office é uma comédia que gira em torno do cotidiano de um escritório. Esta sátira descreve a vida dos funcionários da fábrica de papel Dunder Miffin, situada em Scranton, na Pensilvânia. Entre os personagens está Michael Scout (Steve Carell), o gerente regional da empresa. Solteiro e fanfarrão, ele acredita ser o homem mais bonito do escritório, além de uma fonte de sabedoria e o melhor amigo de seus funcionários. Pam Beesly (Jenna Fischer) é a simpática recepcionista que o tolera. Alguns dos melhores momentos são as conversas que ela tem com o representante de vendas Jim Halpert (John Krasinski); com Dwight Schrute (Rainn Wilson), o arrogante assistente de Michael; e com o auxiliar Ryan Howard, que passa a Michael a visão oficial dos fatos.",
+            "imagem": "img/theoffice.jpg" 
+        }
+        ,
+        {
+            "titulo": "The Walking Dead",
+            "descricao": "the walking dead: The Walking Dead é uma série norte-americana transmitida originalmente pelo canal AMC. A história acompanha a vida na Terra após um apocalipse zumbi e um grupo de sobreviventes liderados pelo ex-policial, Rick Grimes, viajam em busca de um lar seguro. À medida que o mundo dominado pelos mortos afeta seus sobreviventes, seus conflitos interpessoais representam um perigo maior para sua sobrevivência contínua do que os caminhantes que vagam pelo país. A série é baseada nas histórias em quadrinhos homônima criada por Robert Kirkman.",
+            "imagem": "img/twd.jpg" 
+        }
+        ,
+        {
+            "titulo": "Shameless",
+            "descricao": "shameless: A série de comédia dramática norte-americana Shameless, lançada em 2011, recentemente se tornou um sucesso no TikTok, onde várias de suas cenas viralizam. Disponível no HBO Max, a trama acompanha a vida de uma caótica família irlandesa-americana, os Gallaghers, lidando com seu pai alcoólatra e se metendo em situações malucas a cada episódio. Os atores William H. Macy (Fargo: Uma Comédia de Erros) e Emmy Rossum (O Fantasma da Ópera) fazem parte do elenco.",
+            "imagem": "img/shameless.webp" 
+        }
+
+    ]
+}
