@@ -17,7 +17,7 @@ fetch('quadrinhos.json')
         <div class="modal-content">
             <h2>${quadrinho.titulo}</h2> 
             <p>${quadrinho.descricao}</p>
-            <igm src ="${quadrinho.imagem}" alt="${quadrinho.titulo}">
+            <img src ="${quadrinho.imagem}" alt="${quadrinho.titulo}">
             <button id="close-modal">Fechar</button>
         </div>`;
 
