@@ -34,7 +34,7 @@ h2 {
     color: #fff;
 }
 .main {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -53,13 +53,13 @@ img {
 img:hover {
     transition: .8s;
     opacity: 1;
-    transform: scale();
 }
 
 .comic-list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    gap: calc(100px);
     justify-content: space-around;
     padding: 0;
 }
