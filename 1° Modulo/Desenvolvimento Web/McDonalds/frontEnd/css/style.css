@@ -1,77 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400;700&display=swap');
-:root {
-    --fonts:'Fira Sans', sans-serief;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: 0;
-}
 
-html, body {
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    font-family: var(--fonts);
-    background-color: rgb(255, 255, 255);
-}
-
-header {
-    background-color: rgba(219,12,28);
-    height: auto;
-    padding: 30px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.logo {
-    width: 200px;
-}
-
-img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    
-}
-
-main {
-    width: 100%;
-    max-width: 1300px;
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.lanche {
-    height: auto;
-    padding: 20px;
-    border: 1px solid rgb(196, 196, 196);
-    margin: 20px;
-    cursor: pointer;
-    transition: .5s;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.171);
-    
-}
-
-.lanche:hover {
-    background-color: rgb(245, 245, 245);
-    transform: scale(1.1);
-    transition: .5s;
-}
-
-.nome {
-    width: 100%;
-    font-weight: bold;
-    font-family: var(--fonts);
-} */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400;700&display=swap');
 
 *
@@ -135,6 +62,7 @@ main
     padding:20px;
     margin:20px;
     border:1px solid rgb(92,92,92);
+    border-radius: 10px;
     cursor:pointer;
     transition:0.7s;
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.151);
