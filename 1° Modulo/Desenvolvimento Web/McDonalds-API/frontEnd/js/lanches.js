@@ -1,4 +1,4 @@
-document. addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     const lanchesContainer = document.getElementById('lanches');
 
     function carregarLanches() {
@@ -20,3 +20,4 @@ document. addEventListener('DOMContentLoaded', function() {
     }
     carregarLanches();
 });
+
