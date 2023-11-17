@@ -2,9 +2,15 @@
 let x = [];
 
 for(let i = 0; i < 6; i++) {
-    let num = Number(prompt('Digite 6 números:'));
+    let num = Number(prompt(`Digite o  ${i + 1}º número`));
     x.push(num);
 }
+var soma = 0;
 
-const valorX = x.slice(0, 3);
-console.log(valorX);
+for(let i = 0; i < x.length; i++) {
+    soma += x[i];
+    if(i === 2) {
+        break;
+    } 
+}
+alert(soma);
