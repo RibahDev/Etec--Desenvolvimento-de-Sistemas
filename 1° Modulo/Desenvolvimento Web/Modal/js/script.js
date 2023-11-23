@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var clickableDivs = document.querySelectorAll('.abir-modal');
+    var clickableDivs = document.querySelectorAll('.abrir-modal');
     var modal = document.getElementById("modal");
     var span = document.getElementsByClassName("fechar")[0];
 
@@ -21,5 +21,5 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    console.log('Modal displat style on load:', modal.style.display);
+    console.log('Modal display style on load:', modal.style.display);
 });
