@@ -159,7 +159,7 @@ nav {
     justify-content: center;
     align-items: center;
     color: #fff;
-    background-color: #e606c0;
+    background-color: #00c3ff;
     border-radius: 50%;
     transition: all .50s ease;
     padding-top: 4px;
@@ -172,7 +172,7 @@ nav {
 .botoes a {
     display: inline-block;
     color: #fff;
-    background-color: #e606c0;
+    background-color: #00c3ff;
     border: 1px solid transparent;
     padding: 12px 30px;
     line-height: 1.4;
