@@ -40,6 +40,7 @@ main {
 }
 
 header {
+    background-color: #01d9ff0e;
     display: flex;
     align-items: center;
     width: 100%;
