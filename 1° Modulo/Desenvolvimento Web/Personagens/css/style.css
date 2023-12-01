@@ -67,10 +67,13 @@ nav {
     border-bottom: 2px solid transparent;
     transition: all .55s ease;
     margin-right: 60px;
+    transition: .8s;
 }
 
 .menu a:hover {
     border-bottom:2px solid white ;
+    color: aqua;
+    transition: .8s;
 }
 
 #icone-menu {
@@ -115,6 +118,7 @@ nav {
     align-items: center;
     justify-content: center;
     grid-area:imagem;
+    filter: drop-shadow(-20px 7px 5px rgba(0, 0, 0, 0.267));
 }
 
 .eminem-texto h5 {
