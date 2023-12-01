@@ -150,4 +150,67 @@ nav {
 
 .rolagem i {
     font-size: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #e606c0;
+    border-radius: 50%;
+    transition: all .50s ease;
+    padding-top: 4px;
 }
+
+.rolagem i:hover {
+    transform: translateY(-5px);
+}
+
+.botoes a {
+    display: inline-block;
+    color: #fff;
+    background-color: #e606c0;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.espaco {
+    margin-left: 20px;
+}
+
+.botoes a:hover {
+    background: transparent;
+    border: 1px solid #fff;
+    transform: translateX(8px);
+}
+
+.icones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area:icones;
+}
+
+.icones a {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 50px;
+    transition: all .55s ease;
+}
+
+.icones a:hover {
+    transform: translateY(-8px);
+}
+
+.layout {
+    grid-template-areas:none
+    "icones textos imagem";
+}
+
+@media
