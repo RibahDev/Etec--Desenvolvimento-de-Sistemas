@@ -44,6 +44,7 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.164);
 }
 
 .logo {
@@ -55,6 +56,7 @@ header {
     font-size: 30px;
     font-weight: 700;
     flex-grow: 1;
+    font-family: anton;
 }
 
 nav {
@@ -220,6 +222,27 @@ nav {
     grid-template-areas:
     "icones textos imagem";
 }
+
+.texto-rodape {
+    border-top: 2px solid rgb(0, 238, 255);
+    background-color: rgb(10, 10, 10);
+    color: #fff;
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 12pt;
+    width: 100%;
+}
+
+.texto-rodape a {
+    color: rgb(90, 90, 90);
+    text-decoration: none;
+    transition: .5s;
+}
+
+.texto-rodape a:hover {
+    color: #fff;
+}
+
 
 @media (max-width:900px) {
     #icone-menu {
