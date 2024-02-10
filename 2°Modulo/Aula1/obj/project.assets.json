@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\etec\\Documents\\GitHub\\Etec--Desenvolvimento-de-Sistemas\\Aula1\\Aula1.csproj",
+      "projectUniqueName": "C:\\Users\\etec\\Documents\\GitHub\\Etec--Desenvolvimento-de-Sistemas\\2°Modulo\\Aula1\\Aula1.csproj",
       "projectName": "Aula1",
-      "projectPath": "C:\\Users\\etec\\Documents\\GitHub\\Etec--Desenvolvimento-de-Sistemas\\Aula1\\Aula1.csproj",
+      "projectPath": "C:\\Users\\etec\\Documents\\GitHub\\Etec--Desenvolvimento-de-Sistemas\\2°Modulo\\Aula1\\Aula1.csproj",
       "packagesPath": "C:\\Users\\etec\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\etec\\Documents\\GitHub\\Etec--Desenvolvimento-de-Sistemas\\Aula1\\obj\\",
+      "outputPath": "C:\\Users\\etec\\Documents\\GitHub\\Etec--Desenvolvimento-de-Sistemas\\2°Modulo\\Aula1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\etec\\AppData\\Roaming\\NuGet\\NuGet.Config",
