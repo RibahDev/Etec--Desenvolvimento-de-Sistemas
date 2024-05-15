@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+input[type="number"], button {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffff;
+    border: none;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+}
