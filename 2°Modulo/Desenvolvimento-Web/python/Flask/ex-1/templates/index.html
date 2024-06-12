@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Gestão de Tarefas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestão de Tarefas</h1>
+        <form action="{{ url_for('add_task') }}" method="POST">
+            <input type="text" name="task" placeholder="Adicionar nova tarefa">
+            <button type="submit">Adicionar</button>
+        </form>
+        <ul>
+            {% for task in tasks %}
+                <li>
+                    {{ task }}
+                    <form action="{{ url_for('delete_task', task_id=loop.index0) }}" method="POST" style="display: inline;">
+                        <button type="submit">Remover</button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
