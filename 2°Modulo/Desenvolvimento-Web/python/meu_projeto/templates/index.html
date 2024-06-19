@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Contact Adder</title>
+</head>
+<body>
+    <h1>Adicionar Contato</h1>
+    <form action="{{ url_for('add_contact') }}" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" required>
+        <br>
+        <button type="submit">Adicionar</button>
+    </form>
+    <h2>Lista de Contatos</h2>
+    <ul>
+        {% for contato in contatos %}
+            <li>{{ contato.nome }} - {{ contato.telefone }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
