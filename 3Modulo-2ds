@@ -1,0 +1,58 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        /*
+            Convenções 
+            
+            1- Nome de variável SEMPRE começa com letra minuscula
+            
+            2- Funções e Métodos sempre possuem parentesses, geralmente começa com letra minuscula
+            
+            3- Classes sempre começam com a letra maiuscula
+            
+        */
+        
+        // Elabore um programa que:
+        //Sorteie um numero de 0 a 10
+        //Solicite ao usuário em 3 tentativas qual numero ele acha que foi sorteado.
+        //Caso ele acerte, apresente o numero e a quantidade de tentativas
+        //Caso ele náo acerte nas 3 tentativas, avise que perdeu e informe o numero sorteado
+        Random random = new Random();
+        
+        int numeroAleatorio = random.Next(1, 10);
+        int tentativas = 1;
+        
+        
+        Console.WriteLine("Em 3 tentativas, tente acertar o número aleatório");
+        
+            
+        while(true) {
+            Console.WriteLine(tentativas + " " + numeroAleatorio);
+            string respostaUsuario = Console.ReadLine();
+            int numeroUsuario = int.Parse(respostaUsuario);
+            
+            if(numeroUsuario > 10){
+                Console.WriteLine("Número invalido, Tente Novamente na próxima");
+                tentativas--;
+            }
+            if(numeroAleatorio == numeroUsuario) {
+                Console.WriteLine("Voce acertou! Parabéns - Tentativa:" + tentativas );
+                break;
+            }
+            else {
+                Console.WriteLine("Errou! Tente novamente na próxima.");
+            }
+            tentativas++;
+            if(tentativas == 4) {
+                break;
+            }
+        }
+        
+    }
+}
