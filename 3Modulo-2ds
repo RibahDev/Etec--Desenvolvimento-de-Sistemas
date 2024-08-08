@@ -1,45 +1,60 @@
-        // Elabore um programa que:
-        //Sorteie um numero de 0 a 10
-        //Solicite ao usuário em 3 tentativas qual numero ele acha que foi sorteado.
-        //Caso ele acerte, apresente o numero e a quantidade de tentativas
-        //Caso ele náo acerte nas 3 tentativas, avise que perdeu e informe o numero sorteado
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        // Cria uma instância da classe Random para gerar números aleatórios
         Random random = new Random();
 
-        
-        int numeroAleatorio = random.Next(1, 10);
-        int tentativas = 1;
-        
-        
-        Console.WriteLine("Em 3 tentativas, tente acertar o número aleatório");
-        
-        //Recebe a resposta do usuário
-        while(true) {
-            Console.WriteLine(tentativas + " " + numeroAleatorio);
+        // Sorteia um número de 1 a 10 (inclusive)
+        int numeroAleatorio = random.Next(1, 11);
+        int tentativas = 0;
+        int maxTentativas = 3;
+
+        Console.WriteLine("Em 3 tentativas, tente acertar o número aleatório entre 1 e 10.");
+
+        while (tentativas < maxTentativas)
+        {
+            Console.WriteLine($"Tentativa {tentativas + 1} de {maxTentativas}:");
+
+            // Recebe a resposta do usuário
             string respostaUsuario = Console.ReadLine();
-            int numeroUsuario = int.Parse(respostaUsuario);
 
-            //Caso a resposta for invalida          
-            if(numeroUsuario > 10){
-                Console.WriteLine("Número invalido, Tente Novamente na próxima");
-                tentativas--;
+            // Verifica se a resposta é um número válido
+            if (int.TryParse(respostaUsuario, out int numeroUsuario))
+            {
+                // Caso o número esteja fora do intervalo permitido
+                if (numeroUsuario < 1 || numeroUsuario > 10)
+                {
+                    Console.WriteLine("Número inválido, tente um número entre 1 e 10.");
+                }
+                else
+                {
+                    // Caso a resposta esteja correta
+                    if (numeroAleatorio == numeroUsuario)
+                    {
+                        Console.WriteLine($"Você acertou! O número era {numeroAleatorio}. Tentativas usadas: {tentativas + 1}");
+                        return;
+                    }
+                    else
+                    {
+                        // Caso a resposta esteja incorreta
+                        Console.WriteLine("Errou! Tente novamente.");
+                        tentativas++;
+                    }
+                }
             }
-
-            //Caso a resposta esteja correta
-            if(numeroAleatorio == numeroUsuario) {
-                Console.WriteLine("Voce acertou! Parabéns - Tentativa:" + tentativas );
-                break;
-            }
-
-            //Caso a tentativa esteja incorreta
-            else {
-                Console.WriteLine("Errou! Tente novamente na próxima.");
-            }
-            tentativas++;
-            //Encerra o laço caso as tentativas atinjam o limite selecionado
-            if(tentativas == 4) {
-                break;
+            else
+            {
+                // Caso a entrada não seja um número
+                Console.WriteLine("Entrada inválida. Por favor, insira um número entre 1 e 10.");
             }
         }
-        
+
+        // Caso o usuário não tenha acertado nas tentativas permitidas
+        Console.WriteLine($"Você perdeu! O número sorteado era {numeroAleatorio}.");
     }
 }
+
+
