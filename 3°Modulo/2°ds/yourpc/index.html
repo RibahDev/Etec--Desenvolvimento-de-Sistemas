@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peças de Computador</title>
+    <script src="core.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #000;
+        }
+
+        h1 {
+            font-size: 2.9rem;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        img {
+            max-width: 150px;
+            transition: 0.8s;
+        }
+
+        img:hover {
+            transition: 0.5s;
+            scale: calc(120%);
+            filter: drop-shadow(5px 5px 5px #22222259);
+            cursor: pointer;
+        }
+
+        #pecas {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .peca {
+            position: relative;
+            margin: 20px;
+        }
+
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #800101;
+            border: 1px solid #ff0000;
+            border-radius: 5px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #fff;
+        }
+
+        .peca.ativo .info {
+            display: block;
+        }
+
+        img.sobresaido {
+            scale: calc(120%);
+            filter: drop-shadow(5px 5px 5px #22222259);
+        }
+
+        #gif {
+            height: 498px;
+            width: 498px;
+            background-image: url(gif/pc.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Peças de Computador</h1>
+    <div id="pecas">
+        <div class="peca">
+            <img src="imagens/ram.png" alt="Memória RAM">
+            <div class="info">
+            </div>
+        </div>
+        <div class="peca">
+            <img src="imagens/placa-mae.png" alt="Placa Mãe">
+            <div class="info">
+            </div>
+        </div>
+        <div class="peca">
+            <img src="imagens/cpu.png" alt="Processador">
+            <div class="info">
+            </div>
+        </div>
+        <div class="peca">
+            <img src="imagens/gpu.png" alt="Placa de Vídeo">
+            <div class="info">
+            </div>
+        </div>
+        <div class="peca">
+            <img src="imagens/fonte.png" alt="Fonte">
+            <div class="info">
+            </div>
+        </div>
+        <div class="peca">
+            <img src="imagens/ssd-m2.png" alt="SSD M.2">
+            <div class="info">
+            </div>
+        </div>
+    </div>
+
+    <div id="gif"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const pecas = document.querySelectorAll('.peca');
+
+            // Dados das peças de computador
+            const dadosPecas = {
+                "Memória RAM": {
+                    descricao: "A Memória RAM é a memória volátil de um computador, responsável por armazenar dados temporários enquanto o processador os utiliza.",
+                    especificacoes: "Capacidade: 8GB a 64GB | Tipo: DDR4 | Frequência: 2400MHz a 5000MHz"
+                },
+                "Placa Mãe": {
+                    descricao: "A Placa Mãe é o componente central onde todos os outros componentes do computador se conectam. Ela distribui energia e comunicação entre as partes.",
+                    especificacoes: "Chipset: Intel ou AMD | Formato: ATX, microATX | Conectores: USB, SATA, PCIe"
+                },
+                "Processador": {
+                    descricao: "O Processador (CPU) é o cérebro do computador, executando instruções e coordenando as operações do sistema.",
+                    especificacoes: "Núcleos: 4 a 16 | Frequência: 2.5GHz a 5.0GHz | Arquitetura: x86-64"
+                },
+                "Placa de Vídeo": {
+                    descricao: "A Placa de Vídeo (GPU) é responsável pela renderização de imagens e vídeos, sendo essencial para jogos e aplicativos gráficos.",
+                    especificacoes: "Memória: 4GB a 24GB GDDR6 | Conectores: HDMI, DisplayPort | Tecnologia: Ray Tracing, DLSS"
+                },
+                "Fonte": {
+                    descricao: "A Fonte de Alimentação converte a energia elétrica para o computador e distribui para os componentes. Uma boa fonte é essencial para a estabilidade do sistema.",
+                    especificacoes: "Potência: 400W a 1200W | Eficiência: 80 Plus Bronze a Platinum | Conectores: 24-pin, 8-pin, SATA"
+                },
+                "SSD M.2": {
+                    descricao: "O SSD M.2 é um tipo de unidade de armazenamento que oferece uma velocidade de leitura e gravação muito mais rápida em comparação com os discos rígidos tradicionais.",
+                    especificacoes: "Capacidade: 256GB a 2TB | Interface: NVMe | Velocidade de leitura: até 7000MB/s"
+                }
+            };
+
+            pecas.forEach(peca => {
+                const imagem = peca.querySelector('img');
+                const info = peca.querySelector('.info');
+
+                imagem.addEventListener('click', () => {
+                    pecas.forEach(p => p.classList.remove('ativo'));
+                    peca.classList.add('ativo');
+
+                    imagem.classList.add('sobresaido');
+
+                    // Atualiza as informações com base na peça clicada
+                    const nomePeca = imagem.alt;
+                    const dados = dadosPecas[nomePeca];
+
+                    info.innerHTML = `
+                        <h2>${nomePeca}</h2>
+                        <p><strong>Descrição:</strong> ${dados.descricao}</p>
+                        <p><strong>Especificações:</strong><br>${dados.especificacoes}</p>
+                    `;
+                });
+            });
+        });
+        var gif = {
+            init: function () {
+                gif.div = document.getElementById("gif");
+                gif.frameHeight = 498;
+                gif.frames = 20;
+                gif.offsetY = 0;
+
+                gif.animar();
+            },
+            animar: function () {
+                gif.offsetY -= gif.frameHeight;
+                if (gif.offsetY <= -gif.frameHeight * gif.frames) {
+                    gif.offsetY = 0;
+                }
+                gif.div.style.backgroundPosition = "0 " + gif.offsetY + "px";
+                setTimeout(gif.animar, 20);
+            }
+        };
+        Core.start(gif);
+    </script>
+</body>
+
+</html>
